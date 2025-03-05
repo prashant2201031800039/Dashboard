@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen bg-gray-800 text-white">
+    <!-- Sidebar content -->
+    <div class="w-64 p-5 flex flex-col justify-between">
+      <div>
+        <h1 class="text-2xl font-semibold mb-8">eCommerce Dashboard</h1>
+        <ul>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Overview</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Products</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Orders</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Customers</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Analytics</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded-md">Settings</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="#" class="block py-2 px-4 bg-gray-700 rounded-md">Logout</a>
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="flex-1 flex flex-col">
+      <!-- Top bar -->
+      <header class="bg-white p-4 shadow-md flex justify-between items-center">
+        <div class="flex items-center">
+          <button class="lg:hidden text-gray-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <h2 class="text-xl font-semibold ml-4">Dashboard Overview</h2>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span>Prashant Solanki</span>
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full">
+        </div>
+      </header>
+
+      <!-- Content area -->
+      <main class="p-6 flex-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: Sales Overview -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Sales Overview</h3>
+            <div class="text-3xl font-bold text-blue-500">$10,234</div>
+            <p class="text-gray-600">Total Sales</p>
+          </div>
+          <!-- Card 2: Orders -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Orders</h3>
+            <div class="text-3xl font-bold text-green-500">124</div>
+            <p class="text-gray-600">Pending Orders</p>
+          </div>
+          <!-- Card 3: Products -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Products</h3>
+            <div class="text-3xl font-bold text-yellow-500">200</div>
+            <p class="text-gray-600">Products in Stock</p>
+          </div>
+        </div>
+
+        <!-- Product List Section -->
+        <section class="mt-10">
+          <h2 class="text-2xl font-semibold mb-4">Recent Products</h2>
+          <div class="overflow-x-auto bg-white p-4 rounded-lg shadow-md">
+            <table class="w-full table-auto">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="px-4 py-2 text-left">Product</th>
+                  <th class="px-4 py-2 text-left">Category</th>
+                  <th class="px-4 py-2 text-left">Price</th>
+                  <th class="px-4 py-2 text-left">Stock</th>
+                  <th class="px-4 py-2 text-left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2">Product 1</td>
+                  <td class="px-4 py-2">Category A</td>
+                  <td class="px-4 py-2">$50.00</td>
+                  <td class="px-4 py-2">100</td>
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded-md">Edit</button>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded-md ml-2">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2">Product 2</td>
+                  <td class="px-4 py-2">Category B</td>
+                  <td class="px-4 py-2">$30.00</td>
+                  <td class="px-4 py-2">50</td>
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded-md">Edit</button>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded-md ml-2">Delete</button>
+                  </td>
+                </tr>
+                <!-- Add more rows as necessary -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
